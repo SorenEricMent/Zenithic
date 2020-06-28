@@ -1,4 +1,10 @@
-<div>
+<!DOCTYPE HTML>
+<div id="background-image-container">
+	</div>
+<div id="background-image-container-transparent">
+	</div>
+<?php get_header(); ?>
+<div id="articles-main-container">
 	<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 	<div class="articles-container">
 		<br/>
