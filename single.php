@@ -25,11 +25,7 @@
 <span id="article-tags"><?php the_tags('标签：', ', ', ''); ?></span>
 <div id="comment-container" class="mdui-hoverable mdui-shadow-2">
 <?php comments_template( $file, $separate_comments ); ?>
-<?php edit_post_link('编辑', '|', ''); ?>
+<?php edit_post_link('编辑文章', '', ''); ?>
 </div>
-<p class="clearfix">
-	<a href="<?php echo get_option('home'); ?>" class="button float" >返回首页</a>
-	<a href="#commentform" class="button float right" >发表评论</a>
-</p>
 </div>
 <?php get_footer() ?>

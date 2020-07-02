@@ -20,7 +20,9 @@
 <?php
 $current = $wp_query->query_vars['paged'];
 $max_page = $wp_query->max_num_pages; 
-if($current == $max_page){
+echo $current;
+echo $max_page;
+if($current != 0){
 	echo ">";
 }else{
 	echo " disabled>";
@@ -29,7 +31,7 @@ if($current == $max_page){
 <?php 
 $current = $wp_query->query_vars['paged'];
 $max_page = $wp_query->max_num_pages; 
-if($current == $max_page){
+if($current != 0){
 	echo previous_posts_link("Prev");
 }else{
 	echo "Prev";

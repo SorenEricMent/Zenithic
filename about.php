@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: archives
+Template Name: about
 */
 ?>
 <div id="background-image-container">
